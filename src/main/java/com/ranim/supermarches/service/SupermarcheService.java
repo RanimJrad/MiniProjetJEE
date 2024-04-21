@@ -1,0 +1,19 @@
+package com.ranim.supermarches.service;
+
+import java.util.List;
+
+import org.springframework.data.domain.Page;
+
+import com.ranim.supermarches.entities.Supermarche;
+
+public interface SupermarcheService {
+	
+	Supermarche saveSupermarche(Supermarche s);
+	Supermarche updateSupermarche(Supermarche s);
+	void deleteSupermarche(Supermarche s);
+	void deleteSupermarcheById(Long id);
+	Supermarche getSupermarche(Long id);
+	List<Supermarche> getAllSupermarches();
+	Page<Supermarche> getAllSupermarchesParPage(int page, int size);
+
+}
